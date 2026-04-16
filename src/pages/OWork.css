@@ -1,0 +1,416 @@
+.owork-page {
+  overflow: hidden;
+}
+
+.owork-main {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.owork-atmospheric-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(172, 138, 255, 0.08) 0%, rgba(172, 138, 255, 0) 70%);
+  z-index: 0;
+}
+
+.owork-glow-top {
+  width: 600px;
+  height: 600px;
+  top: -6%;
+  right: -10%;
+}
+
+.owork-glow-bottom {
+  width: 500px;
+  height: 500px;
+  bottom: 20%;
+  left: -5%;
+  opacity: 0.5;
+}
+
+.owork-hero,
+.owork-features {
+  position: relative;
+  z-index: 1;
+  padding: 6rem 0;
+}
+
+.owork-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+.owork-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  background: rgba(25, 37, 64, 0.4);
+  border: 1px solid rgba(64, 72, 93, 0.2);
+}
+
+.owork-ping-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  box-shadow: 0 0 0 0 rgba(129, 236, 255, 0.7);
+  animation: oworkPing 2s infinite;
+}
+
+@keyframes oworkPing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(129, 236, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(129, 236, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(129, 236, 255, 0);
+  }
+}
+
+.owork-hero-content h1 {
+  margin: 1.4rem 0;
+  font-size: clamp(2.8rem, 5.2vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.owork-hero-content h1 span,
+.owork-cta-inner h2 span {
+  background: linear-gradient(135deg, #81ecff 0%, #ac8aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.owork-hero-content p {
+  margin: 0;
+  max-width: 40rem;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.owork-hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.owork-primary-btn {
+  border-radius: 999px;
+  padding: 0.9rem 1.8rem;
+}
+
+.owork-secondary-btn {
+  border-radius: 999px;
+  padding: 0.9rem 1.8rem;
+  background: rgba(25, 37, 64, 0.4);
+  border: 1px solid rgba(64, 72, 93, 0.2);
+  color: var(--text-primary);
+}
+
+.owork-hero-image-card {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 1px solid rgba(64, 72, 93, 0.2);
+  background: rgba(25, 37, 64, 0.4);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.owork-hero-image-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  opacity: 0.82;
+  display: block;
+}
+
+.owork-floating-badge {
+  position: absolute;
+  padding: 0.5rem 0.85rem;
+  border-radius: 0.8rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  background: rgba(25, 37, 64, 0.55);
+  border: 1px solid rgba(64, 72, 93, 0.3);
+}
+
+.owork-float-top {
+  top: 1.25rem;
+  right: 1.25rem;
+  color: #00d4ec;
+}
+
+.owork-float-bottom {
+  bottom: 1.25rem;
+  left: 1.25rem;
+  color: #829aef;
+}
+
+.owork-section-head,
+.owork-messaging-head {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.owork-section-head h2,
+.owork-messaging-head h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4.2vw, 4rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.owork-section-head p {
+  margin: 1rem auto 0;
+  max-width: 42rem;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.owork-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.owork-feature-card {
+  border-radius: 2rem;
+  padding: 2rem;
+  background: rgba(25, 37, 64, 0.4);
+  border: 1px solid rgba(64, 72, 93, 0.2);
+  transition: transform 0.25s ease;
+}
+
+.owork-feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.owork-feature-icon,
+.owork-context-icon,
+.owork-side-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 0.8rem;
+  display: grid;
+  place-items: center;
+}
+
+.owork-feature-icon .material-symbols-outlined,
+.owork-context-icon .material-symbols-outlined,
+.owork-side-icon .material-symbols-outlined {
+  font-size: 1.7rem;
+}
+
+.owork-icon-primary {
+  background: rgba(0, 227, 253, 0.1);
+  color: var(--accent-primary);
+}
+
+.owork-icon-tertiary {
+  background: rgba(143, 96, 250, 0.12);
+  color: var(--accent-tertiary);
+}
+
+.owork-icon-secondary {
+  background: rgba(143, 167, 254, 0.12);
+  color: var(--accent-secondary);
+}
+
+.owork-feature-card h3 {
+  margin: 1.1rem 0 0.8rem;
+  font-size: 1.45rem;
+}
+
+.owork-feature-card p,
+.owork-side-card p,
+.owork-context-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.owork-messaging {
+  padding: 6rem 0;
+  background: rgba(9, 19, 40, 0.5);
+  border-top: 1px solid rgba(64, 72, 93, 0.2);
+  border-bottom: 1px solid rgba(64, 72, 93, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.owork-messaging-head {
+  text-align: left;
+}
+
+.owork-messaging-head span {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.owork-messaging-grid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 1.2rem;
+}
+
+.owork-context-card {
+  border-radius: 2rem;
+  padding: 2.3rem;
+  background: rgba(20, 31, 56, 0.85);
+  border: 1px solid rgba(64, 72, 93, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.owork-context-card h4,
+.owork-side-card h4 {
+  margin: 0 0 0.7rem;
+  font-size: 1.7rem;
+}
+
+.owork-context-card h4 {
+  color: var(--accent-primary);
+}
+
+.owork-context-list {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.owork-context-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.owork-context-item h5 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.owork-context-item p {
+  font-size: 0.9rem;
+}
+
+.owork-weaver-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: fit-content;
+  padding: 0.55rem 0.95rem;
+  border-radius: 0.65rem;
+  background: rgba(129, 236, 255, 0.08);
+  border: 1px solid rgba(129, 236, 255, 0.2);
+  color: #b2c1ff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.67rem;
+  font-weight: 700;
+}
+
+.owork-messaging-side {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.owork-side-card {
+  border-radius: 2rem;
+  padding: 2rem;
+  background: rgba(31, 43, 73, 0.55);
+  border: 1px solid rgba(64, 72, 93, 0.2);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.owork-side-card h4 {
+  font-size: 1.3rem;
+}
+
+.owork-side-card p {
+  font-size: 0.92rem;
+}
+
+.owork-cta {
+  position: relative;
+  padding: 8rem 0;
+}
+
+.owork-cta-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(6, 14, 32, 0.9), rgba(6, 14, 32, 0.5)),
+    url('https://lh3.googleusercontent.com/aida-public/AB6AXuCnSF1h9HiFHRjF0KPqhljUCAVBGEY4uQQkszC0yDjznGNrk-xNiz18VC_6cYGoVOF9B1hsE7-IBMgn172my5RYdfYVXWv9vZKhkYxxG7EZR2mCkv-Sw20JTVnw4pB-l7EArAMRIyyKVPjt7kX24mFDHYnaPJQkQ4GviZtfT_OybUxhvMHcLlooE_PTwBhhXbK-XN3aT4INIRkpQE9vZB1v9YivaA_bFa3k382xxg1wXqUxaxw4gsB_IovBrpfQqkaLt8QD8orsCXA');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.18;
+}
+
+.owork-cta-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.owork-cta-inner h2 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 5rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.owork-cta-btn {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 1rem 2.3rem;
+}
+
+.owork-cta-inner p {
+  margin-top: 1.2rem;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+@media (max-width: 1024px) {
+  .owork-hero-grid,
+  .owork-feature-grid,
+  .owork-messaging-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .owork-feature-card,
+  .owork-context-card,
+  .owork-side-card {
+    padding: 1.5rem;
+  }
+}

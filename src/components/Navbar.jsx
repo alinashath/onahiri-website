@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
           <Link to="/" className="nav-link">Features</Link>
           <Link to="/docs/onahiri" className="nav-link">Docs</Link>
-          <Link to="/" className="nav-link">Pricing</Link>
+          <Link to="/pricing" className="nav-link">Pricing</Link>
         </div>
 
         <div className="nav-actions desktop-only">
@@ -100,7 +100,7 @@ const Navbar = () => {
               )}
             </div>
             <Link to="/" className="mobile-link">Features</Link>
-            <Link to="/" className="mobile-link">Pricing</Link>
+            <Link to="/pricing" className="mobile-link">Pricing</Link>
           </div>
           <div className="mobile-actions">
             <a href="#" className="btn btn-secondary full-width">Login</a>

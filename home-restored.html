@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#00e3fd",
+                    "on-error": "#490006",
+                    "tertiary-fixed": "#bda2ff",
+                    "surface-container-lowest": "#000000",
+                    "on-tertiary-fixed": "#1f0052",
+                    "surface-dim": "#060e20",
+                    "primary": "#81ecff",
+                    "error-dim": "#d7383b",
+                    "on-primary-fixed": "#003840",
+                    "on-tertiary-container": "#000000",
+                    "tertiary": "#ac8aff",
+                    "inverse-primary": "#006976",
+                    "primary-fixed": "#00e3fd",
+                    "inverse-surface": "#faf8ff",
+                    "surface-tint": "#81ecff",
+                    "error-container": "#9f0519",
+                    "inverse-on-surface": "#4d556b",
+                    "surface-bright": "#1f2b49",
+                    "primary-fixed-dim": "#00d4ec",
+                    "secondary-fixed-dim": "#b2c1ff",
+                    "on-secondary-fixed": "#0c2d7e",
+                    "surface-container": "#0f1930",
+                    "surface": "#060e20",
+                    "tertiary-dim": "#8455ef",
+                    "tertiary-fixed-dim": "#b091ff",
+                    "surface-container-high": "#141f38",
+                    "secondary-dim": "#829aef",
+                    "outline": "#6d758c",
+                    "on-background": "#dee5ff",
+                    "background": "#060e20",
+                    "on-error-container": "#ffa8a3",
+                    "on-tertiary-fixed-variant": "#4600a8",
+                    "primary-dim": "#00d4ec",
+                    "on-primary-container": "#004d57",
+                    "secondary-container": "#264191",
+                    "on-secondary-fixed-variant": "#314b9c",
+                    "surface-container-low": "#091328",
+                    "outline-variant": "#40485d",
+                    "on-secondary": "#002474",
+                    "surface-variant": "#192540",
+                    "on-primary": "#005762",
+                    "on-surface-variant": "#a3aac4",
+                    "on-surface": "#dee5ff",
+                    "on-secondary-container": "#c3ceff",
+                    "surface-container-highest": "#192540",
+                    "secondary": "#8fa7fe",
+                    "on-primary-fixed-variant": "#005762",
+                    "on-tertiary": "#280067",
+                    "error": "#ff716c",
+                    "tertiary-container": "#8f60fa",
+                    "secondary-fixed": "#c5d0ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(25, 37, 64, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(64, 72, 93, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 z-50 w-full bg-[#060e20]/80 backdrop-blur-xl shadow-[0px_4px_12px_rgba(0,0,0,0.4)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#dee5ff]">Onahiri</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-plus-jakarta-sans text-sm tracking-tight text-[#81ecff] font-semibold border-b-2 border-[#81ecff] pb-1" href="#">Features</a>
+<a class="font-plus-jakarta-sans text-sm tracking-tight text-[#dee5ff]/70 font-medium hover:text-[#81ecff] transition-colors" href="#">Solutions</a>
+<a class="font-plus-jakarta-sans text-sm tracking-tight text-[#dee5ff]/70 font-medium hover:text-[#81ecff] transition-colors" href="#">About</a>
+<a class="font-plus-jakarta-sans text-sm tracking-tight text-[#dee5ff]/70 font-medium hover:text-[#81ecff] transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-semibold text-sm hover:opacity-80 transition-all duration-300 scale-98 active:scale-95">
+                    Get Started
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<main class="relative pt-32 pb-20 overflow-hidden">
+<!-- Atmospheric Glows -->
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-tertiary/10 blur-[120px] rounded-full -mr-64 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/5 blur-[100px] rounded-full -ml-48 -mb-24"></div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Content Left -->
+<div class="lg:col-span-6 z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-container/10 border border-outline-variant/20 mb-8">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-semibold uppercase tracking-widest text-primary">Now in Early Access</span>
+</div>
+<h1 class="text-6xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-6 leading-tight">
+                    Onahiri
+                </h1>
+<p class="text-2xl md:text-3xl font-medium text-on-surface-variant leading-snug mb-10">
+                    Stay Organised.<br/>
+                    Stay Connected.<br/>
+                    Stay In Sync.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-8 py-4 rounded-full font-bold text-lg shadow-[0px_20px_40px_rgba(129,236,255,0.15)] hover:scale-105 transition-transform duration-300">
+                        Launch Experience
+                    </button>
+<button class="px-8 py-4 rounded-full border border-outline-variant/30 font-semibold text-lg text-on-surface hover:bg-surface-variant/40 transition-colors">
+                        View Demo
+                    </button>
+</div>
+</div>
+<!-- High-Tech Visual Right -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full aspect-square glass-panel rounded-[2rem] overflow-hidden shadow-2xl group">
+<img alt="abstract data visualization" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" data-alt="futuristic abstract 3D visualization of glowing blue data nodes and crystal structures floating in a dark atmospheric space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDekErWENd4i9aCrwFp-e3rsmBeFh2deQOOgd4Uk80_rQBc2uXfJHHXPTTYr4ckxjxaADPpt5WzKviWia4_qCTJXpzYPh8lccvNxsPQyDnnmXvLHirOE53FJlsQtp5NoN-HWhpkaaIVPCjH-zU6XD-XIkkn8TrcEie2z4rz9zNRFeM5aRRtQN_nrztMbfC0CBUArFrXqvHWBFlmOCfo6bkM6-m6MnCgYV7sPJi3QPD69hC-LMInzcvqfkKRISWCLSJu0j0nlHMdqE0"/>
+<!-- Floating UI Element -->
+<div class="absolute top-12 left-12 glass-panel p-6 rounded-2xl shadow-xl max-w-[240px]">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">sync</span>
+</div>
+<div>
+<div class="text-sm font-bold">Real-time Sync</div>
+<div class="text-[10px] uppercase tracking-tighter text-on-surface-variant">Active Connection</div>
+</div>
+</div>
+<div class="h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full w-3/4 bg-primary"></div>
+</div>
+</div>
+<!-- Floating UI Element 2 -->
+<div class="absolute bottom-12 right-12 glass-panel p-4 rounded-2xl shadow-xl flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-surface-bright"></div>
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-primary/40"></div>
+<div class="w-8 h-8 rounded-full border-2 border-surface bg-tertiary/40"></div>
+</div>
+<div class="text-xs font-semibold text-primary">+1.2k Online</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Feature Highlights (Bento Grid) -->
+<section class="py-32 relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20 max-w-2xl">
+<h2 class="text-4xl font-bold tracking-tight mb-4 text-[#dee5ff]">The Core Infrastructure</h2>
+<p class="text-lg text-on-surface-variant">Built for teams who demand high-fidelity synchronization and effortless organization in a fragmented digital landscape.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<!-- Large Feature -->
+<div class="md:col-span-8 bg-surface-container rounded-[2rem] p-10 flex flex-col justify-between overflow-hidden relative group">
+<div class="z-10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">desktop_cloud</span>
+<h3 class="text-3xl font-bold mb-4">Hyper-Connected Workspace</h3>
+<p class="text-on-surface-variant max-w-md">Aggregate your entire project lifecycle into a single, cohesive interface. No more context switching between tools.</p>
+</div>
+<div class="absolute bottom-0 right-0 w-3/4 translate-y-12 translate-x-12 opacity-50 group-hover:translate-y-6 group-hover:translate-x-6 transition-transform duration-500">
+<img alt="high-tech servers" class="rounded-tl-3xl shadow-2xl" data-alt="stylized macro shot of futuristic blue glowing computer circuitry and motherboard with neon lighting effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTiZ2TnJ6PcaaQ-Fv0WGuZjIKsd8R2YCli4ymP6Iu7-SOpFeCeDDdwkdGGDay9f4wJwXfWO2F4cyEU3lIt1-wi3q5_g12-95idogA_tvhNv7rwipkafQkerr79tgpZv-R6xSZDYYlPFZSDNi_8PEW_AWzcU_CRN39N7aHdCXHzRg1nLfCEVbIgibWJD3bOebjYNksJmrH6iGN2p1Eb2KPxr8qYogOqm8smPHsijUWLdEqX0LhRpC0BQDYlHExlF_8o3qR9YWv9H1o"/>
+</div>
+</div>
+<!-- Small Feature 1 -->
+<div class="md:col-span-4 bg-surface-container-high rounded-[2rem] p-10 hover:bg-surface-bright transition-colors cursor-default">
+<span class="material-symbols-outlined text-3xl text-tertiary mb-6">shield_with_heart</span>
+<h3 class="text-xl font-bold mb-2">Zero-Trust Security</h3>
+<p class="text-sm text-on-surface-variant">End-to-end encryption for every packet sent through the Onahiri backbone.</p>
+</div>
+<!-- Small Feature 2 -->
+<div class="md:col-span-4 bg-surface-container-high rounded-[2rem] p-10 hover:bg-surface-bright transition-colors cursor-default">
+<span class="material-symbols-outlined text-3xl text-secondary mb-6">bolt</span>
+<h3 class="text-xl font-bold mb-2">Instantaneous Sync</h3>
+<p class="text-sm text-on-surface-variant">Global edge nodes ensure your data is always less than 50ms away from your fingertip.</p>
+</div>
+<!-- Feature 3 (Wide) -->
+<div class="md:col-span-8 bg-gradient-to-r from-surface-container to-[#1f2b49] rounded-[2rem] p-10 flex items-center gap-10">
+<div class="w-1/3 shrink-0">
+<div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-2">Social Synergy</h3>
+<p class="text-on-surface-variant">Connect with contributors seamlessly. Built-in video, chat, and collaborative editing that feels native, not bolted on.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#060e20] border-t border-[#40485d]/10 py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto">
+<div class="mb-6 md:mb-0">
+<div class="text-lg font-bold text-[#dee5ff] mb-2">Onahiri</div>
+<div class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-[#dee5ff]/50">
+                    © 2024 Onahiri. All rights reserved.
+                </div>
+</div>
+<div class="flex gap-8">
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-[#dee5ff]/50 hover:text-[#81ecff] transition-all hover:underline" href="#">Privacy Policy</a>
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-[#dee5ff]/50 hover:text-[#81ecff] transition-all hover:underline" href="#">Terms of Service</a>
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-[#dee5ff]/50 hover:text-[#81ecff] transition-all hover:underline" href="#">Security</a>
+<a class="font-plus-jakarta-sans text-xs uppercase tracking-widest text-[#dee5ff]/50 hover:text-[#81ecff] transition-all hover:underline" href="#">Status</a>
+</div>
+</div>
+</footer>
+</body></html>

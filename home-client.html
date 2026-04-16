@@ -1,0 +1,382 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Onahiri - The Luminous Stratosphere</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#ac8aff",
+              "surface": "#060e20",
+              "primary-fixed": "#00e3fd",
+              "on-error": "#490006",
+              "surface-container-high": "#141f38",
+              "error-dim": "#d7383b",
+              "surface-container-lowest": "#000000",
+              "surface-variant": "#192540",
+              "primary-dim": "#00d4ec",
+              "on-secondary-fixed": "#0c2d7e",
+              "outline": "#6d758c",
+              "surface-dim": "#060e20",
+              "on-error-container": "#ffa8a3",
+              "on-tertiary-fixed-variant": "#4600a8",
+              "primary-fixed-dim": "#00d4ec",
+              "surface-container": "#0f1930",
+              "primary": "#81ecff",
+              "tertiary-fixed-dim": "#b091ff",
+              "surface-bright": "#1f2b49",
+              "on-tertiary-fixed": "#1f0052",
+              "on-secondary-container": "#c3ceff",
+              "secondary-container": "#264191",
+              "outline-variant": "#40485d",
+              "error": "#ff716c",
+              "on-surface": "#dee5ff",
+              "on-secondary-fixed-variant": "#314b9c",
+              "surface-tint": "#81ecff",
+              "secondary-fixed": "#c5d0ff",
+              "on-surface-variant": "#a3aac4",
+              "error-container": "#9f0519",
+              "primary-container": "#00e3fd",
+              "on-primary-fixed": "#003840",
+              "surface-container-highest": "#192540",
+              "inverse-primary": "#006976",
+              "secondary-dim": "#829aef",
+              "on-primary": "#005762",
+              "on-tertiary-container": "#000000",
+              "secondary": "#8fa7fe",
+              "tertiary-dim": "#8455ef",
+              "on-primary-fixed-variant": "#005762",
+              "background": "#060e20",
+              "on-secondary": "#002474",
+              "tertiary-fixed": "#bda2ff",
+              "tertiary-container": "#8f60fa",
+              "on-background": "#dee5ff",
+              "on-tertiary": "#280067",
+              "inverse-surface": "#faf8ff",
+              "on-primary-container": "#004d57",
+              "surface-container-low": "#091328",
+              "inverse-on-surface": "#4d556b",
+              "secondary-fixed-dim": "#b2c1ff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #060e20;
+        color: #dee5ff;
+        overflow-x: hidden;
+      }
+      .glass-card {
+        background: rgba(25, 37, 64, 0.4);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(64, 72, 93, 0.2);
+      }
+      .hero-glow {
+        background: radial-gradient(circle at 70% 50%, rgba(129, 236, 255, 0.15) 0%, rgba(6, 14, 32, 0) 60%);
+      }
+      .atmospheric-glow {
+        background: radial-gradient(circle at center, rgba(172, 138, 255, 0.08) 0%, rgba(6, 14, 32, 0) 80%);
+      }
+      .text-glow {
+        text-shadow: 0 0 30px rgba(129, 236, 255, 0.3);
+      }
+      .microsoft-gradient {
+        background: linear-gradient(135deg, #091328 0%, #060e20 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/40 backdrop-blur-xl border-b border-[#40485d]/20">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#dee5ff]" style="">Onahiri</div>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-medium text-sm tracking-wide">
+<a class="text-[#dee5ff]/70 hover:text-[#dee5ff] transition-colors" href="#" style="">Solutions</a>
+<a class="text-[#81ecff] border-b-2 border-[#81ecff] pb-1" href="#" style="">Features</a>
+<a class="text-[#dee5ff]/70 hover:text-[#dee5ff] transition-colors" href="#" style="">Pricing</a>
+<a class="text-[#dee5ff]/70 hover:text-[#dee5ff] transition-colors" href="#" style="">Guides</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2 text-sm font-medium text-[#dee5ff]/70 hover:text-[#dee5ff] transition-colors" style="">Sign In</button>
+<button class="bg-[#81ecff] text-[#003840] px-6 py-2.5 rounded-full text-sm font-bold scale-98 active:scale-95 transition-transform hover:shadow-[0_0_20px_rgba(129,236,255,0.4)]" style="">Get Started</button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="relative">
+<!-- Redesigned Hero Section (Microsoft Style) -->
+<section class="relative min-h-[95vh] flex items-center justify-center overflow-hidden microsoft-gradient pt-20">
+<div class="absolute inset-0 hero-glow -z-10"></div>
+<div class="max-w-7xl mx-auto px-8 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Text Content Side -->
+<div class="order-2 lg:order-1 text-left">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-8">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-xs font-semibold tracking-widest text-primary uppercase" style="">the new favourite</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter text-on-surface mb-6 leading-none text-glow" style="">
+                            Onahiri
+                        </h1>
+<div class="mb-10 space-y-1">
+<h2 class="text-4xl md:text-6xl font-bold tracking-tight text-on-surface" style="">Stay Organised.</h2>
+<h2 class="text-4xl md:text-6xl font-bold tracking-tight text-primary" style="">Stay Connected.</h2>
+<h2 class="text-4xl md:text-6xl font-bold tracking-tight text-on-surface" style="">Stay In Sync.</h2>
+</div>
+<p class="text-xl text-on-surface-variant max-w-lg font-light leading-relaxed mb-10" style="">A &nbsp;unified system for work management, communication and collaboration.</p>
+<div class="flex flex-col sm:flex-row items-center gap-4">
+<button class="w-full sm:w-auto bg-primary text-on-primary px-10 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-primary/20 transition-all scale-100 hover:scale-105 active:scale-95" style="">Start for free&nbsp;</button>
+<button class="w-full sm:w-auto px-10 py-4 rounded-full text-lg font-bold border border-outline-variant/30 text-on-surface hover:bg-surface-bright transition-all" style="">Demo</button>
+</div>
+</div>
+<!-- Impactful Imagery Side -->
+<div class="order-1 lg:order-2 relative group">
+<div class="absolute -inset-10 bg-primary/20 rounded-full blur-[100px] opacity-40 group-hover:opacity-60 transition-opacity"></div>
+<div class="relative rounded-[2.5rem] overflow-hidden border border-white/10 glass-card p-4">
+<img alt="Modern 3D abstract digital sculpture representing fluid connectivity and cloud infrastructure" class="w-full h-auto object-cover rounded-[2rem] shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBACn6RRcSzSIY9twGMXQ0MrRGcvLHQMGY1MGJg0gQnJE6Z-xim3iPFuh94PdI0VrmB842egmZqRVdR6wQN9-kSQoFOhn-y2Cod4nNyYl9deRcT-z652YJsi30OcMpaqVVcwz5PgfCorysT94_3XiEFqye0jPZsGqkPMFGDAoWH616EbryAs9dRyQuhu6sInY1kmMmkhTVFn8JZpxKRoBnCidJ9eQ09LN_h5zT1fDvpQBndR2eg9Thwn5gTqKAGxTwIerSv9AuRjBU" style="">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Highlights Section -->
+<section class="py-32 relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Highlight 1: Stay Organised -->
+<div class="group relative flex flex-col">
+<div class="absolute -inset-4 bg-primary/5 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative p-8 rounded-[2rem] glass-card h-full flex flex-col transition-all duration-500 group-hover:-translate-y-2">
+<div class="flex justify-center mb-8 mt-4 shrink-0">
+<div class="w-24 h-24 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-5xl text-primary" style="">grid_view</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-1" style="">Stay Organised with OWork</h3>
+<p class="text-on-surface-variant text-sm mb-6" style="">SOP based work management</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary text-xl font-bold" style="">check_circle</span>
+<span class="text-on-surface" style="">Visual task boards</span>
+</li>
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary text-xl font-bold" style="">check_circle</span>
+<span class="text-on-surface" style="">Follow SOP steps</span>
+</li>
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary text-xl font-bold" style="">check_circle</span>
+<span class="text-on-surface" style="">Track Progress</span>
+</li>
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary text-xl font-bold" style="">check_circle</span>
+<span class="text-on-surface" style="">Generate Reports</span>
+</li>
+</ul>
+<div class="mt-auto flex items-center gap-3">
+<button class="bg-primary hover:bg-primary-dim text-on-primary px-4 py-2 rounded-lg text-sm font-bold transition-colors" style="">Watch Demo</button>
+<button class="bg-white/5 hover:bg-white/10 border border-outline-variant/30 text-on-surface px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 transition-colors" style="">
+<span class="material-symbols-outlined text-base" style="">play_circle</span> Get the Guide
+                                </button>
+</div>
+</div>
+</div>
+<!-- Highlight 2: Stay Connected -->
+<div class="group relative flex flex-col">
+<div class="absolute -inset-4 bg-tertiary/5 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative p-8 rounded-[2rem] glass-card h-full flex flex-col transition-all duration-500 group-hover:-translate-y-2">
+<div class="flex justify-center mb-8 mt-4 shrink-0">
+<div class="w-24 h-24 rounded-2xl bg-tertiary/10 flex items-center justify-center border border-tertiary/20">
+<span class="material-symbols-outlined text-5xl text-tertiary" style="">forum</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-1" style="">Stay Connected with OTalk</h3>
+<p class="text-on-surface-variant text-sm mb-6" style="">Link conversations to goals&nbsp;</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary text-xl font-bold" style="">check_circle</span>
+<span class="text-on-surface" style="">Instant Messaging</span>
+</li>
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary text-xl font-bold" style="">check_circle</span>
+<span class="text-on-surface" style="">Rich message formats</span>
+</li>
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary text-xl font-bold" style="">check_circle</span>
+<span class="text-on-surface" style="">Conversations linked to tasks</span>
+</li>
+</ul>
+<div class="mt-auto flex items-center gap-3">
+<button class="bg-primary hover:bg-primary-dim text-on-primary px-4 py-2 rounded-lg text-sm font-bold transition-colors" style="">Watch Demo</button>
+<button class="bg-white/5 hover:bg-white/10 border border-outline-variant/30 text-on-surface px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 transition-colors" style="">
+<span class="material-symbols-outlined text-base" style="">play_circle</span> Get the Guide
+                                </button>
+</div>
+</div>
+</div>
+<!-- Highlight 3: Stay in Sync -->
+<div class="group relative flex flex-col">
+<div class="absolute -inset-4 bg-secondary/5 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative p-8 rounded-[2rem] glass-card h-full flex flex-col transition-all duration-500 group-hover:-translate-y-2">
+<div class="flex justify-center mb-8 mt-4 shrink-0">
+<div class="w-24 h-24 rounded-2xl bg-secondary/10 flex items-center justify-center border border-secondary/20">
+<span class="material-symbols-outlined text-5xl text-secondary" style="">sync_alt</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-1" style="">Stay in Sync with OPulse</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-tight" style="">Internal communication simplified</p>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary text-xl font-bold" style="">check_circle</span>
+<span class="text-on-surface" style="">Newsfeed for work</span>
+</li>
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary text-xl font-bold" style="">check_circle</span>
+<span class="text-on-surface" style="">Live updates and discussions</span>
+</li>
+<li class="flex items-center gap-3" style="">
+<span class="material-symbols-outlined text-primary text-xl font-bold" style="">check_circle</span>
+<span class="text-on-surface" style="">Reduce time spent on internal comms</span>
+</li>
+</ul>
+<div class="mt-auto flex items-center gap-3">
+<button class="bg-primary hover:bg-primary-dim text-on-primary px-4 py-2 rounded-lg text-sm font-bold transition-colors" style="">Watch Demo</button>
+<button class="bg-white/5 hover:bg-white/10 border border-outline-variant/30 text-on-surface px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 transition-colors" style="">
+<span class="material-symbols-outlined text-base" style="">play_circle</span> Get the Guide
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted By Section (Added) -->
+<section class="py-20 relative border-y border-outline-variant/10 bg-surface-container-low/30 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-tertiary/5 opacity-30"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<p class="text-center text-on-surface-variant text-xs font-bold tracking-[0.3em] uppercase mb-12 opacity-60" style="">teams Powered by Onahiri
+    </p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 items-center">
+<div class="flex items-center justify-center group">
+<div class="glass-card px-8 py-6 rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 w-full flex justify-center grayscale contrast-125 opacity-70 group-hover:opacity-100 group-hover:grayscale-0">
+<span class="text-2xl font-black tracking-widest text-on-surface" style="">NTRIO</span>
+</div>
+</div>
+<div class="flex items-center justify-center group">
+<div class="glass-card px-8 py-6 rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 w-full flex justify-center grayscale contrast-125 opacity-70 group-hover:opacity-100 group-hover:grayscale-0">
+<span class="text-2xl font-black tracking-tighter text-on-surface italic" style="">ESCAPISM</span>
+</div>
+</div>
+<div class="flex items-center justify-center group">
+<div class="glass-card px-8 py-6 rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 w-full flex justify-center grayscale contrast-125 opacity-70 group-hover:opacity-100 group-hover:grayscale-0">
+<span class="text-xl font-bold tracking-widest text-on-surface" style="">ISOLA ALIFU</span>
+</div>
+</div>
+<div class="flex items-center justify-center group">
+<div class="glass-card px-8 py-6 rounded-2xl border-white/5 hover:border-primary/30 transition-all duration-500 w-full flex justify-center grayscale contrast-125 opacity-70 group-hover:opacity-100 group-hover:grayscale-0">
+<span class="text-2xl font-extrabold tracking-tight text-on-surface" style="">AYIRA.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Infrastructure Section (Bento Grid) -->
+<section class="py-32 bg-surface-container-low/50 relative">
+<div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-outline-variant/10 to-transparent"></div>
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-xs mb-4 block" style="">Designed for efficiency</span>
+<h2 class="text-5xl font-bold tracking-tight text-on-surface mb-6" style="">One Platform, Three powerful applications.&nbsp;</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed" style="">Work management, chat and newsfeed in one place</p>
+</div>
+<button class="flex items-center gap-2 text-primary font-semibold hover:gap-4 transition-all" style="">
+                        Explore&nbsp;<span class="material-symbols-outlined" style="">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+<!-- Large Feature -->
+<div class="md:col-span-2 md:row-span-2 glass-card rounded-[2rem] p-10 flex flex-col justify-end relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-primary/40 text-8xl group-hover:text-primary transition-colors duration-700" style="">security</span>
+</div>
+<div class="relative z-10">
+<div class="bg-primary-container/20 text-primary px-3 py-1 rounded-full text-xs font-bold w-fit mb-4" style="">THE COMPLETE OSUITE</div>
+<h4 class="text-3xl font-bold text-on-surface mb-4" style="">Onahiri</h4>
+<p class="text-on-surface-variant max-w-sm" style="">Onahari &nbsp;OSUITE consists of three powerful applications. Owork, Otalk and Opluse that allows you to manage work and communicate seamleassly anytime anywhere.</p>
+</div>
+</div>
+<!-- Wide Feature -->
+<div class="md:col-span-2 glass-card rounded-[2rem] p-8 flex items-center gap-8 group">
+<div class="w-24 h-24 rounded-2xl bg-surface-bright flex items-center justify-center shrink-0 border border-outline-variant/20 overflow-hidden">
+<img alt="Abstract macro shot of glowing fiber optic cables" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHVC8BWUTzfF-QYpktKDli4Dlvsiln3ysQMAga5zhPmohub_vBxg-1J_f7lmtuFsTdXOPkZdBbfaPPMBuWs2e_7QRVC3hqjMLaXkpbTNxztQk29kdrLXptB3Ieov-qeTuCSGe1rO32d8ufSmws6PGr_nynp2db31-DWZlsNhmugf_CnQInLX4j3X1SAmfV0BSRFh7EaWvpMPUkyD46KYl48sSJ3WFa1T18d4kvUvy-Uoh_NOFJPUwwFa9SwrVIuZ0hXj98cPev4as" style="">
+</div>
+<div>
+<h4 class="text-xl font-bold text-on-surface mb-2" style="">Owork</h4>
+<p class="text-sm text-on-surface-variant" style="">Stay organised with Owork</p>
+</div>
+</div>
+<!-- Small Feature 1 -->
+<div class="glass-card rounded-[2rem] p-8 flex flex-col justify-between group hover:bg-surface-bright/50 transition-colors">
+<span class="material-symbols-outlined text-tertiary text-4xl" style="">monitoring</span>
+<div>
+<h4 class="text-lg font-bold text-on-surface mb-1" style="">Otalk</h4>
+<p class="text-xs text-on-surface-variant" style="">Stay connected with Otalk&nbsp;</p>
+</div>
+</div>
+<!-- Small Feature 2 -->
+<div class="glass-card rounded-[2rem] p-8 flex flex-col justify-between group hover:bg-surface-bright/50 transition-colors">
+<span class="material-symbols-outlined text-secondary text-4xl" style="">api</span>
+<div>
+<h4 class="text-lg font-bold text-on-surface mb-1" style="">Opulse</h4>
+<p class="text-xs text-on-surface-variant" style="">Stay in sync with Opulse</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-40 relative overflow-hidden">
+<div class="absolute bottom-0 right-0 w-[500px] h-[500px] atmospheric-glow -z-10 blur-[120px] opacity-40"></div>
+<div class="max-w-4xl mx-auto px-8 text-center">
+<h2 class="text-5xl md:text-6xl font-bold tracking-tighter mb-8 text-glow" style="">Ready to elevate?</h2>
+<p class="text-xl text-on-surface-variant mb-12 max-w-xl mx-auto font-light" style="">
+                    Join thousands of developers and teams already scaling on the Onahiri stratosphere.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-12 py-5 rounded-full text-xl font-bold hover:shadow-[0_0_30px_rgba(129,236,255,0.4)] transition-all" style="">Get Started for Free</button>
+<button class="px-12 py-5 rounded-full text-xl font-bold glass-card hover:bg-surface-bright transition-all" style="">Contact Sales</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-3xl bg-[#060e20] border-t border-[#40485d]/10 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 gap-6 max-w-7xl mx-auto">
+<div class="flex flex-col gap-2">
+<div class="text-xl font-bold text-[#dee5ff]" style="">Onahiri</div>
+<div class="font-['Plus_Jakarta_Sans'] text-sm text-[#dee5ff]/60" style="">© 2024 Onahiri. All rights reserved.</div>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Plus_Jakarta_Sans'] text-sm text-[#dee5ff]/50 hover:text-[#81ecff] transition-colors duration-200" href="#" style="">Privacy Policy</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm text-[#dee5ff]/50 hover:text-[#81ecff] transition-colors duration-200" href="#" style="">Terms of Service</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm text-[#dee5ff]/50 hover:text-[#81ecff] transition-colors duration-200" href="#" style="">Twitter</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm text-[#dee5ff]/50 hover:text-[#81ecff] transition-colors duration-200" href="#" style="">GitHub</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm text-[#dee5ff]/50 hover:text-[#81ecff] transition-colors duration-200" href="#" style="">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -11,6 +11,7 @@ import PeopleAndPlaces from './pages/PeopleAndPlaces';
 import Templates from './pages/Templates';
 import Reports from './pages/Reports';
 import Docs from './pages/Docs';
+import Pricing from './pages/Pricing';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/people-places" element={<PeopleAndPlaces />} />
             <Route path="/templates" element={<Templates />} />
             <Route path="/reports" element={<Reports />} />
+            <Route path="/pricing" element={<Pricing />} />
             <Route path="/docs/onahiri" element={<Docs />} />
             <Route path="/docs" element={<Docs />} />
           </Routes>

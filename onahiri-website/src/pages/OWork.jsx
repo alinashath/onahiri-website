@@ -1,48 +1,47 @@
 import React from 'react';
+import { ONBOARDING_URL } from '../constants/links';
 import './OWork.css';
 
 const OWork = () => {
   const fluidFeatures = [
     {
-      icon: 'badge',
-      title: 'Flexible Roles',
-      description:
-        'Dynamic role assignment that evolves with project phases. Assign tasks based on expertise and workload requirements.',
+      icon: 'manage_accounts',
+      title: 'Team Roles and Assignment',
+      description: 'Assign roles and responsibilities clearly.',
       iconClass: 'owork-icon-primary',
     },
     {
-      icon: 'dashboard_customize',
+      icon: 'view_kanban',
       title: 'Visual Task Boards',
       description:
-        'SOP-based working management with intuitive visual boards designed for high-velocity teams. Manage tasks across departments seamlessly.',
+        'Get full visibility into your team’s work and progress.',
       iconClass: 'owork-icon-tertiary',
     },
     {
-      icon: 'hub',
-      title: 'Global Collaboration',
+      icon: 'forum',
+      title: 'Real-time Collaboration',
       description:
-        'Real-time synchronization across every node in your network, ensuring speed and quality of work.',
+        'Seamless teamwork, built into every task. Chat panels, live updates, and realtime alerts.',
       iconClass: 'owork-icon-secondary',
     },
     {
-      icon: 'analytics',
+      icon: 'auto_graph',
       title: 'AI Report Generation',
       description:
-        'Reporting and progress tracking made effortless. AI feature help convert raw data into actionable boardroom-ready insights instantly.',
+        'Make reporting and progress tracking effortless with AI.',
       iconClass: 'owork-icon-primary',
     },
     {
-      icon: 'avg_time',
-      title: 'Cognitive Time Tracking',
-      description:
-        "Passive time tracking that understands context. It does not just clock hours; it maps productivity peaks and resource bottlenecks.",
+      icon: 'account_tree',
+      title: 'Structured Workflows',
+      description: 'Work smarter with step-by-step task flows.',
       iconClass: 'owork-icon-tertiary',
     },
     {
       icon: 'support_agent',
       title: 'Intelligent Support',
       description:
-        '24/7 proactive assistance. Our support system identifies potential workflow issues before they become blockers for your team.',
+        'Identify potential workflow issues before they become blockers for your team.',
       iconClass: 'owork-icon-secondary',
     },
   ];
@@ -56,23 +55,21 @@ const OWork = () => {
         <section className="owork-hero">
           <div className="container owork-hero-grid">
             <div className="owork-hero-content">
-              <div className="owork-pill-badge">
-                <span className="owork-ping-dot" />
-                Introducing Work Weaving
-              </div>
-
               <h1>
-                Work Management <span>Simplified</span>
+                Stay Organised with <span>OWork</span>
               </h1>
 
               <p>
-                Intelligent project management with fluid task weaving and resource mapping. Manage work
-                the way you want, not the other way around.
+                Manage work the way you want, not the other way around.
               </p>
 
               <div className="owork-hero-actions">
-                <button className="btn btn-primary owork-primary-btn">Start Free Trial</button>
-                <button className="btn owork-secondary-btn">Book a Demo</button>
+                <a href={ONBOARDING_URL} className="btn btn-primary owork-primary-btn">
+                  Start Free Trial
+                </a>
+                <button type="button" className="btn owork-secondary-btn">
+                  Book a Demo
+                </button>
               </div>
             </div>
 
@@ -82,8 +79,6 @@ const OWork = () => {
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQNiXEBldY98m8xHy93A79BLSKB0_f5uJZ_G8c6ErVtnADyyY0bW3e1dDIJtedNl_QAdeYVNbX6Dgw3S6FEsJW_NaLre64NWlRRBJXJ7ZM-rcCoBTy1KFfCLO9kIOb_jgZT7-A4saldeGCiq3-AiqRrBOMQpJsEdsPkjjUruIyMu_8HT2LVgZUKsSrfdbPZ_M_CsEirn2FcuzGBJIaCPHpwPp6wO0fNc8Wp47wOqHrR21WloLb-SBBqDW-DmFYol92Wjiu6RaDmTQ"
                   alt="Digital nodes and abstract workplace visualization"
                 />
-                <div className="owork-floating-badge owork-float-top">Neural Node Active</div>
-                <div className="owork-floating-badge owork-float-bottom">99.9% Sync Accuracy</div>
               </div>
             </div>
           </div>
@@ -92,10 +87,9 @@ const OWork = () => {
         <section className="owork-features">
           <div className="container">
             <div className="owork-section-head">
-              <h2>Fluid Productivity by Design</h2>
+              <h2>SOP based work management made easy.</h2>
               <p>
-                Every feature is built on our cognitive engine to understand and adapt to your team&apos;s
-                unique rhythm.
+                It&apos;s flexible, intuitive, and built to move with your momentum.
               </p>
             </div>
 
@@ -117,7 +111,7 @@ const OWork = () => {
           <div className="container">
             <div className="owork-messaging-head">
               <span>Smart Messaging Features</span>
-              <h2>Conversations that lead to action</h2>
+              <h2>Improve quality of work with messaging.</h2>
             </div>
 
             <div className="owork-messaging-grid">
@@ -159,10 +153,6 @@ const OWork = () => {
                   </div>
                 </div>
 
-                <div className="owork-weaver-tag">
-                  <span className="owork-ping-dot" />
-                  Integrated with Task Weaver
-                </div>
               </article>
 
               <div className="owork-messaging-side">
@@ -186,8 +176,7 @@ const OWork = () => {
                   <div>
                     <h4>Smart Action Triggers</h4>
                     <p>
-                      Convert messages into tasks or update status directly from the chat interface with
-                      simple command weaving.
+                      Convert messages into tasks or update status directly from the chat interface.
                     </p>
                   </div>
                 </article>
@@ -200,11 +189,11 @@ const OWork = () => {
           <div className="owork-cta-bg" />
           <div className="container owork-cta-inner">
             <h2>
-              Ready to weave <br />
-              <span>your work?</span>
+              Ready to make work easy?
             </h2>
-            <button className="btn btn-primary owork-primary-btn owork-cta-btn">Get Started for Free</button>
-            <p>Join 5,000+ teams weaving the future of productivity on OWork.</p>
+            <a href={ONBOARDING_URL} className="btn btn-primary owork-primary-btn owork-cta-btn">
+              Get Started for Free
+            </a>
           </div>
         </section>
       </main>

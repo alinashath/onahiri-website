@@ -1,11 +1,12 @@
 import React from 'react';
+import { ONBOARDING_URL } from '../constants/links';
 import './HeroSection.css';
 
 const HeroSection = ({ 
   titleHtml, 
   subtitle, 
   primaryBtnText = "Start For Free", 
-  primaryBtnLink = "https://onahiri.app/onboarding",
+  primaryBtnLink = ONBOARDING_URL,
   secondaryBtnText,
   secondaryBtnLink,
   centered = true 

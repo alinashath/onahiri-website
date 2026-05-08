@@ -1,4 +1,5 @@
 import React from 'react';
+import { ONBOARDING_URL } from '../constants/links';
 import './OPulse.css';
 
 const OPulse = () => {
@@ -14,7 +15,7 @@ const OPulse = () => {
       icon: 'bolt',
       title: 'Live Feeds',
       description:
-        'Real-time updates with comments, reactions, and granular visibility controls to keep conversations relevant.',
+        'Real-time updates with comments, reactions to keep conversations relevant.',
       iconClass: 'opulse-icon-tertiary',
     },
     {
@@ -33,21 +34,18 @@ const OPulse = () => {
           <div className="opulse-hero-glow" />
           <div className="container opulse-hero-grid">
             <div className="opulse-hero-content">
-              <div className="opulse-pill">Workplace Social Layer</div>
               <h1>
-                Build Culture.
-                <br />
-                <span>Share Ideas.</span>
-                <br />
-                Stay in Sync.
+                Stay in Sync with <span>OPulse</span>
               </h1>
               <p>
                 OPulse is your organization&apos;s social collaboration layer-connecting people, ideas, and
                 updates in one unified space.
               </p>
               <div className="opulse-hero-actions">
-                <button className="btn btn-primary opulse-btn-primary">Start Collaborating</button>
-                <button className="btn opulse-btn-secondary">
+                <a href={ONBOARDING_URL} className="btn btn-primary opulse-btn-primary">
+                  Start Collaborating
+                </a>
+                <button type="button" className="btn opulse-btn-secondary">
                   <span className="material-symbols-outlined">play_circle</span>
                   Watch Demo
                 </button>
@@ -94,7 +92,6 @@ const OPulse = () => {
         <section className="opulse-ecosystem">
           <div className="container">
             <div className="opulse-ecosystem-head">
-              <span>The Pulse Ecosystem</span>
               <h2>Interactive Features</h2>
             </div>
 
@@ -188,11 +185,15 @@ const OPulse = () => {
             <div className="opulse-cta-card">
               <h2>Ready to transform your workplace culture?</h2>
               <p>
-                Join thousands of teams using OPulse to stay connected and inspired every single day.
+                Join teams using OPulse to stay connected and inspired every single day.
               </p>
               <div className="opulse-cta-actions">
-                <button className="btn btn-primary opulse-btn-primary">Get Started for Free</button>
-                <button className="btn opulse-btn-secondary">Book a Walkthrough</button>
+                <a href={ONBOARDING_URL} className="btn btn-primary opulse-btn-primary">
+                  Get Started for Free
+                </a>
+                <button type="button" className="btn opulse-btn-secondary">
+                  Book a Walkthrough
+                </button>
               </div>
             </div>
           </div>

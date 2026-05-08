@@ -1,51 +1,73 @@
 import React from 'react';
+import { ONBOARDING_URL } from '../constants/links';
 import './OTalk.css';
 
 const OTalk = () => {
   const mainFeatures = [
     {
       icon: 'lock_open',
-      title: 'Encrypted Messaging',
+      title: 'Stay Connected in Real Time',
       description:
-        'End-to-end post-quantum encryption ensures your conversations stay private. Metadata scrubbing comes standard on every thread.',
+        'Keeps your teams in sync with seamless communication',
       iconClass: 'otalk-icon-primary',
     },
     {
       icon: 'video_chat',
-      title: 'HD Video Chat',
+      title: 'Link Coversations to Taks',
       description:
-        'Crystal-clear 4K video conferencing with spatial audio integration. Low-latency protocols designed for distributed global teams.',
+        'From direct chats to group discussions, the system adapts to how your team communicates, collaborates, and shares information.',
       iconClass: 'otalk-icon-secondary',
     },
     {
       icon: 'folder_shared',
-      title: 'Integrated File Sharing',
+      title: 'Role-Based Access Control',
       description:
-        'Seamlessly transmit large datasets with automatic virus scanning and tiered permission controls for sensitive documents.',
+        'Manage chats with confidence using permission settings that give the right people the right level of access.',
       iconClass: 'otalk-icon-tertiary',
     },
   ];
 
   const productivityItems = [
     {
-      icon: 'forum',
-      title: 'Contextual Threads',
+      icon: 'chat',
+      title: 'Direct and Group Chat',
       description:
-        'Organize discussions by project, phase, or priority with AI-suggested tagging systems.',
+        'Connect one-on-one or bring teams together in dynamic group conversations.',
       iconClass: 'otalk-icon-primary',
     },
     {
-      icon: 'person_search',
-      title: 'Rich Presence',
+      icon: 'topic',
+      title: 'Message Versatility',
       description:
-        'Know exactly when your team is focused, in a meeting, or available for quick syncs.',
+        'Send text, files, audio, and links—all from a single conversation thread.',
       iconClass: 'otalk-icon-secondary',
     },
     {
-      icon: 'bolt',
-      title: 'Smart Action Triggers',
+      icon: 'sync',
+      title: 'Real-time sync',
       description:
-        'Convert messages to tasks or calendar invites instantly with natural language processing.',
+        'Experience live typing indicators, read receipts, and instant message delivery.',
+      iconClass: 'otalk-icon-tertiary',
+    },
+    {
+      icon: 'admin_panel_settings',
+      title: 'Role based access',
+      description:
+        'Assign roles like Admin or Participant to control permissions in each chat.',
+      iconClass: 'otalk-icon-primary',
+    },
+    {
+      icon: 'attach_file',
+      title: 'Intergrated file sharing',
+      description:
+        'Share and preview documents, images, and recordings without leaving the chat.',
+      iconClass: 'otalk-icon-secondary',
+    },
+    {
+      icon: 'history',
+      title: 'Conversation History',
+      description:
+        'Easily search, track, and revisit every update-organized and always accessible.',
       iconClass: 'otalk-icon-tertiary',
     },
   ];
@@ -58,24 +80,19 @@ const OTalk = () => {
         <section className="otalk-hero">
           <div className="container otalk-hero-grid">
             <div className="otalk-hero-content">
-              <div className="otalk-release-pill">
-                <span className="otalk-pill-dot" />
-                New v4.0 Release
-              </div>
               <h1>
-                OTalk: Secure,
-                <br />
-                <span>High-Fidelity</span>
-                <br />
-                Communication
+                Stay Connected with <span>OTalk</span>
               </h1>
               <p>
-                Experience the next generation of enterprise connectivity. OTalk provides an encrypted
-                environment for teams that demand absolute privacy without sacrificing performance.
+                Assign tasks, share updates, and keep things moving-without breaking the flow.
               </p>
               <div className="otalk-hero-actions">
-                <button className="btn btn-primary otalk-btn-primary">Initialize Secure Session</button>
-                <button className="btn otalk-btn-secondary">View Documentation</button>
+                <a href={ONBOARDING_URL} className="btn btn-primary otalk-btn-primary">
+                  Start for Free
+                </a>
+                <button type="button" className="btn otalk-btn-secondary">
+                  View Documentation
+                </button>
               </div>
             </div>
 
@@ -123,38 +140,13 @@ const OTalk = () => {
             </div>
 
             <div className="otalk-productivity-copy">
-              <h2>
-                Communication that
-                <br />
-                <span>keeps work moving</span>
-              </h2>
+              <h2>Smart Conversations, Real Results</h2>
               <p>
-                OTalk is not just a chat tool-it is a productivity hub. By integrating deep context into
-                every interaction, we eliminate the noise and focus on what matters: your results.
+                OTalk brings clarity, speed, and structure to every conversation-right where work happens.
               </p>
-              <button className="otalk-link-btn">
-                Explore Productivity Features
-                <span className="material-symbols-outlined">arrow_forward</span>
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section className="otalk-cta">
-          <div className="container">
-            <div className="otalk-cta-card">
-              <h2>
-                Ready to elevate your
-                <br />
-                team&apos;s connectivity?
-              </h2>
-              <p>
-                Join thousands of high-performance teams using OTalk to secure their digital workspace.
-              </p>
-              <div className="otalk-cta-actions">
-                <button className="btn btn-primary otalk-btn-primary">Start Free Trial</button>
-                <button className="btn otalk-btn-secondary">Schedule a Demo</button>
-              </div>
+              <a href={ONBOARDING_URL} className="btn btn-primary otalk-btn-primary">
+                Start for Free
+              </a>
             </div>
           </div>
         </section>

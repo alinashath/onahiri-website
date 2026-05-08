@@ -29,21 +29,6 @@
   align-items: center;
 }
 
-.opulse-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.45rem 0.85rem;
-  border-radius: 999px;
-  background: rgba(143, 96, 250, 0.1);
-  border: 1px solid rgba(143, 96, 250, 0.2);
-  color: var(--accent-tertiary);
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 .opulse-hero-content h1 {
   margin: 1.5rem 0;
   font-size: clamp(2.6rem, 6vw, 5.3rem);
@@ -217,16 +202,8 @@
   margin-bottom: 2.8rem;
 }
 
-.opulse-ecosystem-head span {
-  color: var(--accent-primary);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
 .opulse-ecosystem-head h2 {
-  margin: 0.5rem 0 0;
+  margin: 0;
   font-size: clamp(2rem, 5vw, 4rem);
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
+import { ONBOARDING_URL } from '../constants/links';
 import './Home.css';
 
 const Home = () => {
@@ -54,8 +55,12 @@ const Home = () => {
                 A unified system for work management, communication and collaboration.
               </p>
               <div className="home-hero-actions">
-                <button className="btn btn-primary home-btn-primary">Start for free</button>
-                <button className="btn home-btn-secondary">Demo</button>
+                <a href={ONBOARDING_URL} className="btn btn-primary home-btn-primary">
+                  Start for free
+                </a>
+                <button type="button" className="btn home-btn-secondary">
+                  Demo
+                </button>
               </div>
             </div>
 
@@ -71,6 +76,34 @@ const Home = () => {
           </div>
         </section>
 
+        <section className="home-platform-section">
+          <div className="container">
+            <div className="home-platform-head">
+              <div>
+                <span>Designed for efficiency</span>
+                <h2>One Platform, Three powerful applications.</h2>
+                <p>Work management, chat and newsfeed in one place</p>
+              </div>
+              <button className="home-platform-link">
+                Explore <span className="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+
+            <div className="home-platform-grid">
+              <article className="home-platform-main">
+                <span className="material-symbols-outlined home-platform-main-icon">security</span>
+                <div className="home-platform-tag">THE COMPLETE OSUITE</div>
+                <h4>Onahiri</h4>
+                <p>
+                  Onahari Osuite is designed to help you manage work efficiently, collaborate
+                  seamlessly, and stay connected through three powerful applications - Owork,
+                  Otalk and Opulse.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
         <section className="home-feature-section">
           <div className="container">
             <div className="home-feature-grid">
@@ -80,7 +113,6 @@ const Home = () => {
                     <span className="material-symbols-outlined">{card.icon}</span>
                   </div>
                   <h3>{card.title}</h3>
-                  <p className="home-feature-subtitle">{card.subtitle}</p>
                   <ul>
                     {card.items.map((item) => (
                       <li key={item}>
@@ -115,64 +147,18 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="home-platform-section">
-          <div className="container">
-            <div className="home-platform-head">
-              <div>
-                <span>Designed for efficiency</span>
-                <h2>One Platform, Three powerful applications.</h2>
-                <p>Work management, chat and newsfeed in one place</p>
-              </div>
-              <button className="home-platform-link">
-                Explore <span className="material-symbols-outlined">arrow_forward</span>
-              </button>
-            </div>
-
-            <div className="home-platform-grid">
-              <article className="home-platform-main">
-                <span className="material-symbols-outlined home-platform-main-icon">security</span>
-                <div className="home-platform-tag">THE COMPLETE OSUITE</div>
-                <h4>Onahiri</h4>
-                <p>
-                  Onahari OSUITE consists of three powerful applications. Owork, Otalk and Opulse
-                  that allows you to manage work and communicate seamlessly anytime anywhere.
-                </p>
-              </article>
-
-              <article className="home-platform-wide">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHVC8BWUTzfF-QYpktKDli4Dlvsiln3ysQMAga5zhPmohub_vBxg-1J_f7lmtuFsTdXOPkZdBbfaPPMBuWs2e_7QRVC3hqjMLaXkpbTNxztQk29kdrLXptB3Ieov-qeTuCSGe1rO32d8ufSmws6PGr_nynp2db31-DWZlsNhmugf_CnQInLX4j3X1SAmfV0BSRFh7EaWvpMPUkyD46KYl48sSJ3WFa1T18d4kvUvy-Uoh_NOFJPUwwFa9SwrVIuZ0hXj98cPev4as"
-                  alt="Abstract macro shot of glowing fiber optic cables"
-                />
-                <div>
-                  <h4>Owork</h4>
-                  <p>Stay organised with Owork</p>
-                </div>
-              </article>
-
-              <article className="home-platform-small home-platform-small-tertiary">
-                <span className="material-symbols-outlined">monitoring</span>
-                <h4>Otalk</h4>
-                <p>Stay connected with Otalk</p>
-              </article>
-
-              <article className="home-platform-small home-platform-small-secondary">
-                <span className="material-symbols-outlined">api</span>
-                <h4>Opulse</h4>
-                <p>Stay in sync with Opulse</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
         <section className="home-cta-section">
           <div className="home-atmospheric-glow" />
           <div className="container home-cta-content">
-            <h2>Ready to elevate?</h2>
-            <p>Join thousands of teams already scaling on the Onahiri stratosphere.</p>
+            <h2>Ready to make work easy?</h2>
+            <p>Switch to Onahiri</p>
             <div className="home-cta-actions">
-              <button className="btn btn-primary home-btn-primary">Get Started for Free</button>
-              <button className="btn home-btn-secondary">Contact Sales</button>
+              <a href={ONBOARDING_URL} className="btn btn-primary home-btn-primary">
+                Get Started for Free
+              </a>
+              <button type="button" className="btn home-btn-secondary">
+                Contact Sales
+              </button>
             </div>
           </div>
         </section>

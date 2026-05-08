@@ -12,7 +12,7 @@
   min-height: 92vh;
   display: flex;
   align-items: center;
-  padding: 7rem 0 4rem;
+  padding: 7rem 0 2.2rem;
   background: linear-gradient(135deg, #091328 0%, #060e20 100%);
 }
 
@@ -147,7 +147,15 @@
 
 .home-feature-section,
 .home-platform-section {
-  padding: 7rem 0;
+  padding: 5rem 0;
+}
+
+.home-platform-section {
+  padding-bottom: 2.25rem;
+}
+
+.home-feature-section {
+  padding-top: 2.25rem;
 }
 
 .home-feature-grid {
@@ -182,7 +190,11 @@
 
 .home-feature-card h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.24rem;
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  white-space: nowrap;
 }
 
 .home-feature-subtitle {
@@ -194,7 +206,7 @@
 .home-feature-card ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 1.4rem;
+  margin: 1rem 0 1.4rem;
   display: grid;
   gap: 0.6rem;
   flex: 1;
@@ -362,9 +374,10 @@
 }
 
 .home-platform-main {
-  grid-column: span 2;
-  grid-row: span 2;
-  padding: 2rem;
+  grid-column: 1 / -1;
+  grid-row: auto;
+  min-height: 320px;
+  padding: 2.4rem;
   position: relative;
   overflow: hidden;
 }
@@ -487,6 +500,10 @@
 
   .home-feature-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-feature-card h3 {
+    white-space: normal;
   }
 
   .home-trusted-grid {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { APP_LOGIN_URL, ONBOARDING_URL } from '../constants/links';
 import './Footer.css';
 
 const Footer = () => {
@@ -11,12 +12,6 @@ const Footer = () => {
             <Link to="/" className="brand-logo">
               <img src="/logo.svg" alt="Onahiri" className="brand-logo-img" />
             </Link>
-            <p className="footer-desc">
-              Where you can manage work efficiently, collaborate seamlessly, and stay connected.
-            </p>
-            <a href="mailto:make.easy@effimetic.com" className="footer-email">
-              make.easy@effimetic.com
-            </a>
           </div>
           
           <div className="footer-links">
@@ -36,8 +31,12 @@ const Footer = () => {
             <ul>
               <li><Link to="/">About Us</Link></li>
               <li><Link to="/">Contact</Link></li>
-              <li><a href="https://onahiri.app">Login</a></li>
-              <li><a href="https://onahiri.app/onboarding">Sign Up</a></li>
+              <li>
+                <a href={APP_LOGIN_URL}>Login</a>
+              </li>
+              <li>
+                <a href={ONBOARDING_URL}>Sign Up</a>
+              </li>
             </ul>
           </div>
         </div>

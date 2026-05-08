@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Activity, MessageSquare, PlusSquare, Network, Layers, BarChart2 } from 'lucide-react';
+import { APP_LOGIN_URL, ONBOARDING_URL } from '../constants/links';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -71,8 +72,12 @@ const Navbar = () => {
         </div>
 
         <div className="nav-actions desktop-only">
-          <a href="#" className="btn btn-secondary">Login</a>
-          <a href="#" className="btn btn-primary">Start for Free</a>
+          <a href={APP_LOGIN_URL} className="btn btn-secondary">
+            Login
+          </a>
+          <a href={ONBOARDING_URL} className="btn btn-primary">
+            Start for Free
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -103,8 +108,12 @@ const Navbar = () => {
             <Link to="/pricing" className="mobile-link">Pricing</Link>
           </div>
           <div className="mobile-actions">
-            <a href="#" className="btn btn-secondary full-width">Login</a>
-            <a href="#" className="btn btn-primary full-width mt-2">Start for Free</a>
+            <a href={APP_LOGIN_URL} className="btn btn-secondary full-width">
+              Login
+            </a>
+            <a href={ONBOARDING_URL} className="btn btn-primary full-width mt-2">
+              Start for Free
+            </a>
           </div>
         </div>
       )}

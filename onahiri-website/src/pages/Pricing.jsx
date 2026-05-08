@@ -1,4 +1,5 @@
 import React from 'react';
+import { ONBOARDING_URL } from '../constants/links';
 import './Pricing.css';
 
 const Pricing = () => {
@@ -34,7 +35,9 @@ const Pricing = () => {
                 No hidden fees. No complicated fee tiers. You are billed solely based on the number of
                 active users in your last 30-day payment cycle.
               </p>
-              <button className="pricing-primary-btn">START YOUR FREE TRIAL</button>
+              <a href={ONBOARDING_URL} className="pricing-primary-btn">
+                START YOUR FREE TRIAL
+              </a>
               <p className="pricing-subtext">Cancel anytime. No credit card required to start.</p>
             </article>
           </div>
@@ -70,8 +73,12 @@ const Pricing = () => {
             <h2>Ready to unify your workflow?</h2>
             <p>Join 50,000+ teams today and experience the new standard of productivity.</p>
             <div className="pricing-final-actions">
-              <button className="pricing-primary-btn">Start Your 30-Day Free Trial</button>
-              <button className="pricing-secondary-btn">Contact Sales</button>
+              <a href={ONBOARDING_URL} className="pricing-primary-btn">
+                Start Your 30-Day Free Trial
+              </a>
+              <button type="button" className="pricing-secondary-btn">
+                Contact Sales
+              </button>
             </div>
           </div>
         </section>

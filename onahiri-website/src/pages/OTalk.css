@@ -16,8 +16,7 @@
 }
 
 .otalk-hero,
-.otalk-main-features,
-.otalk-cta {
+.otalk-main-features {
   position: relative;
   z-index: 1;
 }
@@ -244,6 +243,10 @@
   color: #00d4ec;
 }
 
+.otalk-productivity-copy .btn {
+  margin-top: 1.25rem;
+}
+
 .otalk-link-btn {
   margin-top: 1.25rem;
   border: 0;
@@ -262,57 +265,6 @@
 
 .otalk-link-btn:hover .material-symbols-outlined {
   transform: translateX(3px);
-}
-
-.otalk-cta {
-  padding: 6rem 0 2.5rem;
-}
-
-.otalk-cta-card {
-  border-radius: 2rem;
-  padding: 2.8rem 1.4rem;
-  text-align: center;
-  background: rgba(25, 37, 64, 0.4);
-  border: 1px solid rgba(64, 72, 93, 0.25);
-  position: relative;
-  overflow: hidden;
-}
-
-.otalk-cta-card::before {
-  content: '';
-  position: absolute;
-  top: -70px;
-  right: -70px;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background: rgba(129, 236, 255, 0.12);
-  filter: blur(80px);
-}
-
-.otalk-cta-card h2,
-.otalk-cta-card p,
-.otalk-cta-actions {
-  position: relative;
-  z-index: 1;
-}
-
-.otalk-cta-card h2 {
-  margin: 0;
-  font-size: clamp(2rem, 4.6vw, 3.4rem);
-  line-height: 1.2;
-}
-
-.otalk-cta-card p {
-  margin: 1rem auto 1.8rem;
-  max-width: 40rem;
-}
-
-.otalk-cta-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
 }
 
 @media (max-width: 1024px) {
